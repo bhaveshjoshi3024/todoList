@@ -10,7 +10,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-    origin: ['https://todolist-1-p3yj.onrender.com', 'http://localhost:3000']
+    origin: ['https://todo-list-iota-swart.vercel.app', 'http://localhost:3000']
   }));
 app.use(express.json());
 
