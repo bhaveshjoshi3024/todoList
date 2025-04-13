@@ -9,7 +9,9 @@ const app = express();
 // Connect DB
 connectDB();
 
-app.use(cors());
+app.use(cors({
+    origin: ['https://todolist-1-p3yj.onrender.com', 'http://localhost:3000']
+  }));
 app.use(express.json());
 
 app.use("/api/todos", require("./routes/todoRoutes"));
