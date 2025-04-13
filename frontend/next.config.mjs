@@ -5,22 +5,18 @@ const nextConfig = {
 reactStrictMode: true,
 
 // Enable proper API route handling
-async headers() {
-    return [
-      {
-        source: '/api/:path*',
-        headers: [
-          { key: 'Access-Control-Allow-Origin', value: '*' },
-          { key: 'Access-Control-Allow-Methods', value: 'GET,POST,PUT,DELETE' }
-        ]
-      }
-    ]
-  },
+// async headers() {
+//     return [
+//       {
+//         source: '/api/:path*',
+//         headers: [
+//           { key: 'Access-Control-Allow-Origin', value: '*' },
+//           { key: 'Access-Control-Allow-Methods', value: 'GET,POST,PUT,DELETE' }
+//         ]
+//       }
+//     ]
+//   },
 
-  // Optional: Enable ISR for better performance
-  experimental: {
-    isrMemoryCacheSize: 100,
-  }
 };
 
 export default nextConfig;
